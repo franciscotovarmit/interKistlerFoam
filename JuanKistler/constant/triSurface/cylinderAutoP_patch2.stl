@@ -1,0 +1,198 @@
+solid patch2
+  facet normal 0 0 1
+    outer loop
+       vertex 97.8148 20.7912 100
+       vertex 97.8148 -20.7912 100
+       vertex 100 0 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 91.3545 40.6737 100
+       vertex 97.8148 -20.7912 100
+       vertex 97.8148 20.7912 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 91.3545 40.6737 100
+       vertex 91.3545 -40.6737 100
+       vertex 97.8148 -20.7912 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 80.9017 58.7785 100
+       vertex 91.3545 -40.6737 100
+       vertex 91.3545 40.6737 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 80.9017 58.7785 100
+       vertex 80.9017 -58.7785 100
+       vertex 91.3545 -40.6737 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 66.9131 74.3145 100
+       vertex 80.9017 -58.7785 100
+       vertex 80.9017 58.7785 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 66.9131 74.3145 100
+       vertex 66.9131 -74.3145 100
+       vertex 80.9017 -58.7785 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 50 86.6025 100
+       vertex 66.9131 -74.3145 100
+       vertex 66.9131 74.3145 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 50 86.6025 100
+       vertex 50 -86.6025 100
+       vertex 66.9131 -74.3145 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 30.9017 95.1057 100
+       vertex 50 -86.6025 100
+       vertex 50 86.6025 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 30.9017 95.1057 100
+       vertex 30.9017 -95.1057 100
+       vertex 50 -86.6025 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 10.4528 99.4522 100
+       vertex 30.9017 -95.1057 100
+       vertex 30.9017 95.1057 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex 10.4528 99.4522 100
+       vertex 10.4528 -99.4522 100
+       vertex 30.9017 -95.1057 100
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+       vertex -10.4528 99.4522 100
+       vertex 10.4528 -99.4522 100
+       vertex 10.4528 99.4522 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex -10.4528 99.4522 100
+       vertex -10.4528 -99.4522 100
+       vertex 10.4528 -99.4522 100
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+       vertex -30.9017 95.1057 100
+       vertex -10.4528 -99.4522 100
+       vertex -10.4528 99.4522 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex -30.9017 95.1057 100
+       vertex -30.9017 -95.1057 100
+       vertex -10.4528 -99.4522 100
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+       vertex -50 86.6025 100
+       vertex -30.9017 -95.1057 100
+       vertex -30.9017 95.1057 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex -50 86.6025 100
+       vertex -50 -86.6025 100
+       vertex -30.9017 -95.1057 100
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+       vertex -66.9131 74.3145 100
+       vertex -50 -86.6025 100
+       vertex -50 86.6025 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex -66.9131 74.3145 100
+       vertex -66.9131 -74.3145 100
+       vertex -50 -86.6025 100
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+       vertex -80.9017 58.7785 100
+       vertex -66.9131 -74.3145 100
+       vertex -66.9131 74.3145 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex -80.9017 58.7785 100
+       vertex -80.9017 -58.7785 100
+       vertex -66.9131 -74.3145 100
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+       vertex -91.3545 40.6737 100
+       vertex -80.9017 -58.7785 100
+       vertex -80.9017 58.7785 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex -91.3545 40.6737 100
+       vertex -91.3545 -40.6737 100
+       vertex -80.9017 -58.7785 100
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+       vertex -97.8148 20.7912 100
+       vertex -91.3545 -40.6737 100
+       vertex -91.3545 40.6737 100
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+       vertex -97.8148 20.7912 100
+       vertex -97.8148 -20.7912 100
+       vertex -91.3545 -40.6737 100
+    endloop
+  endfacet
+  facet normal 0 -0 1
+    outer loop
+       vertex -97.8148 -20.7912 100
+       vertex -97.8148 20.7912 100
+       vertex -100 0 100
+    endloop
+  endfacet
+endsolid patch2
