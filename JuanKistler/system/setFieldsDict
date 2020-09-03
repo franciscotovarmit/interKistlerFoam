@@ -1,0 +1,44 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.water 0
+    volVectorFieldValue U (0 0 0)
+    //volScalarFieldValue muEffKistler 0;//muEffKistler;
+
+);
+
+regions
+(
+
+
+   sphereToCell
+    {
+        centre      (0 0 10.5e-3); //set droplet position
+    	radius      1.25e-3;	    //set droplet size
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 1
+            //volVectorFieldValue U (0 0 -0.1)  //set initial droplet velocity if needed
+        );
+    }
+
+);
+
+
+// ************************************************************************* //
