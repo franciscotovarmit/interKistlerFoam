@@ -15,8 +15,6 @@ volScalarField p_rgh
 );
 
 
-
-
 Info<< "Reading field U\n" << endl;
 volVectorField U
 (
@@ -36,7 +34,52 @@ volVectorField U
 
 Info<< "Reading transportProperties\n" << endl;
 
-/// using  mixture instead of twoPhaseProperties(U, phi);
+    //The following two fields supports the Kistler contact angle model
+    volScalarField muEffKistler
+    (
+        IOobject
+        (
+            "muEffKistler",
+            runTime.timeName(),
+            mesh,
+            IOobject::NO_READ,
+            IOobject::NO_WRITE
+        ),
+                mesh
+                
+    );  
+
+        IOdictionary transportProperties
+    (
+        IOobject
+        (
+            "transportProperties",
+            runTime.constant(),
+            mesh,
+            IOobject::MUST_READ_IF_MODIFIED,
+            IOobject::NO_WRITE
+        )
+    );
+
+
+    // Kistler contact angle model needs the sigma vol scalar field to be in the
+    // objectRegistry - even though sigma is already in the interface object
+    // below
+        
+    volScalarField sigma
+    (
+        IOobject
+        (
+            "sigmaKistler",
+            runTime.timeName(),
+            mesh,
+            IOobject::NO_READ,
+            IOobject::NO_WRITE
+        ),
+        mesh,
+        dimensionedScalar(transportProperties.lookup("sigma"))
+    ); 
+
 immiscibleIncompressibleTwoPhaseMixture mixture(U, phi);
 
 ///this is how alpha is created
@@ -132,7 +175,7 @@ mesh.setFluxRequired(alpha1.name());
 
 
     //The following two fields supports the Kistler contact angle model
-    volScalarField muEffKistler
+   /* volScalarField muEffKistler
     (
         IOobject
         (
@@ -145,42 +188,4 @@ mesh.setFluxRequired(alpha1.name());
         //twoPhaseProperties.mu() + rho*turbulence->nut()
                 mixture.mu() + rho*turbulence->nut()
                 
-    );  
-    
-
-    IOdictionary transportProperties
-    (
-        IOobject
-        (
-            "transportProperties",
-            runTime.constant(),
-            mesh,
-            IOobject::MUST_READ_IF_MODIFIED,
-            IOobject::NO_WRITE
-        )
-    );
-
-
-
-
-
-    // Kistler contact angle model needs the sigma vol scalar field to be in the
-    // objectRegistry - even though sigma is already in the interface object
-    // below
-    
-    
-    volScalarField sigma
-    (
-        IOobject
-        (
-            "sigmaKistler",
-            runTime.timeName(),
-            mesh,
-            IOobject::NO_READ,
-            IOobject::NO_WRITE
-        ),
-        mesh,
-        dimensionedScalar(transportProperties.lookup("sigma"))
-    );  
-
-    
+    );  */

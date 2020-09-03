@@ -95,7 +95,6 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            volScalarField mu = mixture.mu();
             if (pimple.firstPimpleIter() || moveMeshOuterCorrectors)
             {
                 mesh.update();
@@ -142,7 +141,7 @@ int main(int argc, char *argv[])
             mixture.correct();
                     //Update fields for Kistler model
         //muEffKistler = twoPhaseProperties.mu() + rho*turbulence->nut();
-        muEffKistler = mixture.mu(); //+ rho*turbulence->nut();
+        muEffKistler = mixture.mu() + rho*turbulence->nut();
 
             #include "alphaControls.H"
             #include "alphaEqnSubCycle.H"
